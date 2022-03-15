@@ -37,7 +37,7 @@ model.add(tf.keras.Input(shape=(128, 128, 3)))
 # Add output layer to the model
 #model.add(tf.keras.layers.Dense(4, activation="softmax"))
 
-# Add a Conv2D layer with 8 filters each size 3x3, and stride of 3
+# Add a Conv2D layer with 8 filters each size 3x3, and stride of 2
 model.add(tf.keras.layers.Conv2D(8, 3, strides=2, activation="relu"))
 
 # Add a max pooling layer
